@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function kirimPesan() {
+            const nama = document.getElementById("nama").value;
+            alert("Terima kasih, " + nama + "! Pesan Anda sudah dikirim.");
+            return false;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Hubungi Kami</h1>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="destinasi.html">Destinasi</a>
+    <a href="media.html">Media</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+
+<section>
+    <form onsubmit="return kirimPesan()">
+        <input type="text" id="nama" placeholder="Nama Anda" required>
+        <input type="email" id="email" placeholder="Email Anda" required>
+        <textarea id="pesan" placeholder="Pesan Anda..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Muhammad Haikal</p>
+</footer>
+
+</body>
+</html>
